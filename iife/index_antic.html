@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function user(){
+    let email = 'jordiriba@iesebre.com';
+    var password = '1234'
+
+      function consoleme() {
+        console.log('Usuari: '+ email)
+
+
+      }
+      return {
+        consoleme : consoleme,
+          email : email
+      }
+  }
+  var riba = user()
+  riba.consoleme()
+  console.log(riba.email);
+  console.log('HEY!')
+</script>
+
+</body>
+</html>
