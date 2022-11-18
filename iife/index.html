@@ -3,27 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script src="user.js"></script>
 </head>
 <body>
 <script>
-    //IIFE
-    var riba = (function () {
-        let email = 'jordiriba@iesebre.com';
-        var password = '1234'
-
-        function consoleme() {
-            console.log('Usuari: ' + email)
-
-
-        }
-
-        return {
-            consoleme: consoleme,
-            email: email
-        }
-    })()
-    riba.consoleme()
-    console.log(riba.email);
+    user.setemail('carles@gmail.com').consoleme()
+    console.log(user.email);
     console.log('HEY!')
 </script>
 
